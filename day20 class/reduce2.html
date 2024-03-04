@@ -1,0 +1,10 @@
+<script>
+    let str = 'sachin';
+    // reverse a string using reduce()
+
+    let arr = str.split('');
+    let revstr = arr.reduce(function(result, char){
+        return char + result;
+    }, '');
+    console.log(revstr);
+</script>

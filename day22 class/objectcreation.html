@@ -1,0 +1,22 @@
+<script>
+    let obj1 ={ a:10, b:20};
+
+    let obj2 = Object.create(obj1);
+
+    //Object class
+ let obj3 = new Object();
+
+ //4 using class & object
+ class Emp{
+    constructor(id, name, sal){
+        this.id = id;
+        this.name = name;
+        this.sal = sal;
+    }
+ }
+ let emp1 = new Emp(101, 'sanjay', 30000);
+ console.log(obj1);
+ console.log(obj2);
+ console.log(obj3);
+ console.log(emp1);
+</script>

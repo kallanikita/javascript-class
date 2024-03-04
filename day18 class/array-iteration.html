@@ -1,0 +1,32 @@
+<script>
+    let names = ['Manasa', 'Akash', 'Aman', 'Pawan', 'Deepak'];
+
+    // 1. Loop
+    for (i=0; i < names.length  ; i++) {
+        document.write(names[i] +'<br>');
+        //console.log(names[i]);
+    }
+        document.write('______________________________________<br>')
+    
+     // 2. For-In Loop
+    for(i in names){
+        document.write(names[i] + '<br>');
+    }
+        document.write('_______________________________________<br>');
+
+    // 3. For-Of Loop
+    for(name of names){
+        document.write(name + '<br>');
+    }
+    document.write('__________________________________________<br>')
+
+    // 4. forEach()
+    // function f1(val){
+    //     //console.log(val);
+    //     document.write(val +'<br>')
+    // }names.forEach(f1);
+    
+    // names.forEach((a) => console.log(a));  
+    names.forEach((a) => document.write(a  +'<br>'));  
+
+</script>

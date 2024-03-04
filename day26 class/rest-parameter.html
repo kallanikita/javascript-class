@@ -1,0 +1,22 @@
+<script>
+   function add(a, b){
+        console.log(a + b);
+    } 
+    add(2, 3);  
+    // add() can add only 2 nos
+    // write a function which can add any no of argument
+    
+    function add(...arg){
+        let sum = 0;
+        for(ele of arg){
+            sum += ele;
+        }
+        console.log(sum);  
+    }
+    add(2, 3);  //5
+    add(1, 2, 3);  //6
+    add(1, 2, 3, 4);  //10
+    add(1, 2, 3, 4, 5);   //15
+    // ... inside a functn def --> rest parameter
+    // ... while calling a functn , with array copy, obj copy --> spread parameter
+    </script>

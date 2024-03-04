@@ -1,0 +1,21 @@
+<script>    
+class Employee{
+    name = 'sachin';
+
+    greet1 = function() {
+        console.log('Hello', this.name);
+        console.log(this)
+    }
+    greet2 =()=>{
+        console.log('Hiii', this.name);
+        console.log(this)
+    }
+}
+let emp1 = new Employee();
+emp1.greet1();
+emp1.greet2();
+
+setTimeout( emp1.greet1, 2000); //not working
+setTimeout( emp1.greet2, 4000);
+
+</script>

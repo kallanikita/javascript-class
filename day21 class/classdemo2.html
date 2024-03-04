@@ -1,0 +1,25 @@
+<script>
+    // ES-6
+    class Address{
+             constructor(Street, city, Pincode){
+            this.Street = Street;
+            this.City = city;
+            this.Pincode = Pincode;
+        }
+    }
+    class Student{
+        constructor(roll, name, add, course){
+            this.roll = roll;
+            this.name = name;
+            this.add = add;
+            this.course = course;
+        }
+}
+let add1= new Address('kukatpally', 'hyderabad','530047');
+let std1 = new Student(101,'Ajay',add1,'ReactJS');
+
+let add2= new Address('sivaji nagar', 'mumbai','830049');
+let std2 = new Student(102,'Amar',add2,'NodeJS');
+
+console.log(std1, std2);
+</script>

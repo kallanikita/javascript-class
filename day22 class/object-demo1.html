@@ -1,0 +1,16 @@
+<script>
+    let user = { name: 'sachin', age: 35, add: 'mumbai'};
+    console.log(user.name);
+    console.log(user['age']);
+
+    let emp = {'first name': 'sanjay', age: 40, sal: 5000 }
+    console.log(emp['first name']);
+
+    let a = 'age';
+    console.log(emp[a]);
+    console.log(emp.a);
+
+    for(key in emp){
+        console.log(key+"========"+emp[key]);
+    }
+</script>

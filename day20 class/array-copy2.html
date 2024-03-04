@@ -1,0 +1,12 @@
+<script>
+    let arr = [10, 20,[30, 40]];
+    let arr1 = arr; //address copy
+
+    let arr2 = structuredClone(arr); //value Copy(deep copy)
+    arr2.push(50);
+    console.log(arr, arr2);
+
+    arr2[2].push(45);
+    console.log(arr, arr2);
+
+</script>

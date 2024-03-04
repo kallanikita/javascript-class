@@ -1,0 +1,34 @@
+<script>
+    // 1. function declaration
+    // add(2,3);          true
+    function add(a, b) {
+        console.log(a + b)
+    }
+    add(2,3);
+
+    //2. function expression\
+    //sub(3, 5);             false
+    var sub = function(a, b){
+        console.log(a - b);
+    }
+    sub(3, 5);
+    sub(5,3);
+
+    //3. self invoked / IIFE
+ //var mul = (function(a, b){
+    (function(a, b){
+        console.log(a * b);
+        //return 10;
+    })(3,5);
+    //(4,6);              FALSE
+//console.log(mul);       return value vl come
+
+// 4. Arrow function
+
+var division = (a, b) => {
+ console.log(a / b);
+}
+division(20,5);
+
+</script>
+

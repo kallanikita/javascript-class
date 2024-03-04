@@ -1,0 +1,11 @@
+<script>
+
+let obj2 = {x:100 , y:200};
+Object.preventExtensions(obj2);
+obj2.x = 150;
+delete obj2.y;
+obj2.z = 300;
+console.log(obj2);
+console.log(Object.isExtensible(obj2));
+
+</script>

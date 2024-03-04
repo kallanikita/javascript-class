@@ -1,0 +1,19 @@
+<script>
+    let obj1 = {
+        a: 10,
+        b: 20, 
+        add: function() {
+            console.log(this.a + this.b);
+        }
+    }
+    obj1.add();
+
+     let obj2 = {
+        a:15,
+        b:25
+     }
+     //obj2.add();
+
+     obj1.add.call(obj2); // inside add() this = obj2
+     // call and function from obj1. but inside add() this = obj2
+</script>

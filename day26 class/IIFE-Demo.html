@@ -1,0 +1,22 @@
+<script>
+    function test() {
+        if (5 == 5){
+            (function () {
+                var name = 'sachin';
+            console.log('inside block: ' + name); //sachin
+        })();
+    }
+        console.log('outside block: ' + name); //
+      }
+    test();
+//b4 2015 we r not having IIfE (let,const) so we used to write like that
+    function test1() {
+        {
+            let name = 'sachin';
+            console.log('inside block: ' + name); //sachin
+        }
+        console.log('outside block: ' + name);  //
+      
+    }
+    test1();
+</script>

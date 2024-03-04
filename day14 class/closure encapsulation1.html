@@ -1,0 +1,29 @@
+<script>
+
+    function openAccount(InitialBal) {
+    console.log(`Thank you for opening account your balance is ${InitialBal}`);
+
+    let accNo= 1122334455;
+    let accBal= InitialBal;
+    
+    //console.log(openAccount.accNo, openAccount.accBal);
+    return {
+        displayInfo: function() {
+            console.log(accNo, accBal);
+        },
+        deposit: function(amt) {
+            accBal = accBal + amt;
+        },
+        
+    }
+}
+let encapsulatedAccount =openAccount(3000);
+console.log(encapsulatedAccount);
+console.log(encapsulatedAccount.accNo, encapsulatedAccount.accBal);
+encapsulatedAccount.displayInfo();
+encapsulatedAccount.deposit(1000);
+encapsulatedAccount.displayInfo();
+encapsulatedAccount.deposit(-5000);
+encapsulatedAccount.displayInfo();
+
+</script>

@@ -1,0 +1,25 @@
+<script>
+    let arr = [20, 50, 10, 40, 30];
+    arr.sort();
+    console.log(arr); 
+
+    let cars = ['maruti', 'honda', 'tata','hyundai'];
+    cars.sort();
+    console.log(cars);
+
+    let arr1 = [101, 0, 97, 105, 98, 7, 8, 104];
+    arr1.sort();
+    console.log(arr1);
+
+    function sortByAsc(a,b){
+        return a-b;
+    }
+    arr1.sort(sortByAsc);
+    console.log(arr1);
+
+    function sortByDesc(a, b){
+        return b-a;
+    }
+    arr1.sort(sortByDesc);
+    console.log(arr1);
+</script>

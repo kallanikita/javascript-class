@@ -1,0 +1,17 @@
+<script>
+    function add(a, b){
+        console.log(this.num + a + b);
+    }
+    add(2, 3);
+
+    let obj1 = { num: 4 };
+    add.call(obj1, 2, 3);  //9
+
+    let arr = [2, 3];
+    add.call(obj1, arr);  // 4 2,3 undef
+
+    add.apply(obj1, arr); // 9
+
+    let arr1 = [2, 3, 4, 5];
+    add.call(obj1, arr1);
+</script>

@@ -1,0 +1,19 @@
+<script>
+    let a = 10;
+    console.log('Global a- ', a);
+
+    function  test(){
+       let a = 12;
+    console.log('Function a- ', a);
+
+    if(true){
+   let a = 15;
+    console.log('Block a- ', a);
+
+    function testInner(){
+    console.log('Global a- ', a);
+
+    } testInner();
+    }}
+    test();
+</script>

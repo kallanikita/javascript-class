@@ -1,0 +1,18 @@
+<script>
+    let user = {name: 'sachin', age: 35, add: 'mumbai'};
+    //es-5
+    let a = user.name;
+    let b = user.age;
+    let c = user.add;
+    console.log(a, b, c); 
+     
+    //ES-6
+    let {name, age , add} = user;
+    console.log(name, age , add);
+
+    let {p, q} = user;
+    console.log(p, q);  // undef undef
+
+    let { name:x, age: y, add: z} = user;
+    console.log(x, y, z);
+</script> 

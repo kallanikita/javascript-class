@@ -1,0 +1,20 @@
+<script>
+    //  a=11;
+    //  b=10; // mul vl get value if v declare in window
+    let obj = {
+        a: 10,
+        b: 20,
+        add:function () {
+            console.log(this.a + this.b); //30
+            // this = how it is called
+            console.log(this) // object
+        },
+        mul: () => {
+            console.log(this.a * this.b); // NaN
+            // this = where it is declared
+            console.log(this) //window
+        }
+    }
+    obj.add();
+    obj.mul();
+    </script>
